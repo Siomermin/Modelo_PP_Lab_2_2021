@@ -23,7 +23,7 @@ using System.Threading.Tasks;
                 this.medida = medida;
             }
 
-            public override double Ganancia
+            public override double Ganancia // ARREGLAR ESTO, ES POR MEDIDA
             {
                 get
                 {
@@ -34,9 +34,10 @@ using System.Threading.Tasks;
             protected override void ServirMedida()
             {
                 this.contenido -= this.medida;
+
                 if (this.contenido < medida)
                 {
-                    this.contenido = 0;
+                    this.contenido -= this.contenido;
                 }
             }
 
@@ -46,6 +47,7 @@ using System.Threading.Tasks;
                 sb.AppendLine("--Cerveza--");
                 sb.Append(base.ToString());
                 sb.AppendLine($"Tipo: {tipo} - Medida: {medida}");
+
                 sb.AppendLine("-------------");
                 return sb.ToString();
             }

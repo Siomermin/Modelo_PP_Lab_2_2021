@@ -37,9 +37,8 @@ using System.Threading.Tasks;
                 {
                     StringBuilder sb = new StringBuilder();
                     sb.AppendLine("--Agua--");
-                    sb.Append(base.ToString());
-                    sb.AppendLine($"Tipo de agua: {this.tipo}");
-                sb.AppendLine("--------");
+                    sb.Append($"{base.ToString()}\nTipo de agua: {this.tipo}");
+                    sb.AppendLine("--------");
                     return sb.ToString();
                 }
 

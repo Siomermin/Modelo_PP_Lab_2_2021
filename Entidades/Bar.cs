@@ -14,7 +14,7 @@ using Entidades.Botellas;
                 private string nombre;
                 private double recaudacion;
 
-                public Bar()
+                public Bar() // FALTA AGREGAR VALORES PREDETERMINADOS
                 {
                     botellas = new List<Botella>();
                     
@@ -111,7 +111,7 @@ using Entidades.Botellas;
                     return String.Compare((string)a, (string)b);
                 }
 
-                public static explicit operator Double(Bar b)
+                public static explicit operator Double(Bar b) // FALTA ARREGLAR ALGO ACA SEGURO
                 {
             /*
                     if (b is not null)
@@ -166,7 +166,9 @@ using Entidades.Botellas;
                 {
                     if (a == b)
                     {
-                        b--;
+
+                        --b;
+
                         a += b.Ganancia;
                         if (b.PorcentajeContenido == 0)
                         {

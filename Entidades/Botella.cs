@@ -34,7 +34,7 @@ using System.Text;
             {
                 get
                 {
-                    return (this.contenido / this.capacidad) * 100;
+                    return this.contenido * 100 / this.capacidad;
                 }
             }
 

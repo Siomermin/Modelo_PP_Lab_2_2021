@@ -57,17 +57,21 @@ namespace ConsoleAppBar
             Console.WriteLine(b.MostrarBar);
 
             b -= c1;
+            Console.WriteLine(b.MostrarBar);
             b -= c1;
+            Console.WriteLine(b.MostrarBar);
             b -= c1;
+            Console.WriteLine(b.MostrarBar);
             b -= c1;//no hay más
  
             b -= c2;
             b -= c3;
             b -= c4;
-
             Console.WriteLine(b.MostrarBar);
-            
-            
+
+
+
+            /*
             b.OrdenarBotellas(Ordenamiento.Marca);
             Console.WriteLine(b.MostrarBar);
 
@@ -76,7 +80,7 @@ namespace ConsoleAppBar
 
             b.OrdenarBotellas(Ordenamiento.PorcentajeContenido);
             Console.WriteLine(b.MostrarBar);
-            
+            */
 
             Console.ReadLine();
 
